@@ -13,6 +13,10 @@ echo "Token: ${TOKEN}"
 echo "Channel: ${CHANNEL}"
 echo "Message: ${MSG}"
 
+RANDUM_NUM=$(echo $RANDOM % 900 + 1 | bc)
+echo $RANDUM_NUM
+sleep $RANDUM_NUM
+
 curl --location --request POST "https://slack.com/api/chat.postMessage" \
   --header "Content-Type: application/json;charset=UTF-8" \
   --header "Authorization: Bearer ${TOKEN}" \
