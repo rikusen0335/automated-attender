@@ -13,7 +13,7 @@ echo "Token: ${TOKEN}"
 echo "Channel: ${CHANNEL}"
 echo "Message: ${MSG}"
 
-RANDUM_NUM=$(echo $RANDOM % 900 + 1 | bc)
+RANDUM_NUM=$(echo $RANDOM % 500 + 1 | bc)
 echo $RANDUM_NUM
 sleep $RANDUM_NUM
 
