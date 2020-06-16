@@ -28,7 +28,7 @@ def main():
     rand_temp = round(random.uniform(35.5, 36.6), 1)
 
     if len(sys.argv) >= 5:
-        message = message + ' ' + str(rand_temp) + '℃'
+        message = message + ' ' + str(rand_temp)
         print('Temperature: ' + str(rand_temp) + '℃')
 
     print('Wait time: ' + str(rand_time) + 's')
