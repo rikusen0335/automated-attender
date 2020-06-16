@@ -25,15 +25,14 @@ def main():
     rand_time = random.randint(1, 10)
     rand_temp = round(random.uniform(35.5, 36.6), 1)
 
+    if len(sys.argv) >= 5:
+        message = message + ' ' + str(rand_temp)
+
     print(rand_time)
     print(rand_temp)
 
     time.sleep(rand_time)
 
-    #headers = {
-    #    'Content-Type': 'application/json;charset=UTF-8',
-    #    'Authorization': token,
-    #}
     data = {
         'token': token,
         'channel': channel,
